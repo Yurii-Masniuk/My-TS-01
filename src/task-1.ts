@@ -1,12 +1,12 @@
-interface Style {
+interface Settings {
     darkMode: boolean,
     fontSize: number,
     language: string,
 };
 
-const settings: Style = {
+const settings: Settings = {
     darkMode: true,
     fontSize: 16,
     language: 'en',
 };
-console.log(settings);
+console.log('settings', settings);

@@ -1,6 +1,11 @@
-function sendDoneStatus(callback: (status: string) => void): void {
+type Callback = (message: string) => void;
+
+
+function sendDoneStatus(callback: Callback): void {
     callback("done");
 }
 
-console.log(sendDoneStatus);
+sendDoneStatus((message) => {
+    console.log('Task status', message);
+})
 

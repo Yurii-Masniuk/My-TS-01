@@ -36,4 +36,4 @@ const getUserName = async (id: number) => {
     console.log(user.name);
 };
 
-getUserName(3);
+getUserName(1);
